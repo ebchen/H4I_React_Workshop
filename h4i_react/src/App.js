@@ -18,8 +18,10 @@ function App() {
 
   return (
     <div className="App">
-      <h1>To Do List</h1>
-      <p>{tasks.map(t => <div><TaskCard task = {t}/></div>)}</p>
+      <div className = "App-container">
+        <h1>To Do List</h1>
+        <p className = "App-container">{tasks.map(t => <div><TaskCard task = {t} check = {check} edit = {edit} remove = {remove}/></div>)}</p>
+      </div>
     </div>
   );
 }
