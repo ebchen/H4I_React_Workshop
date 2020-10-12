@@ -22,9 +22,9 @@ const Task = ({task, remove, edit, check}) => {
         </Typography>
         </CardContent>
         <CardActions style={{display:"flex", flexDirection: "row", justifyContent :"space-between", margin:"0 25%"}}>   
-       <div className="flexItem" style={{cursor:"pointer"}}> <i onClick={()=>{edit(task._id)}} class="fas fa-edit fa-lg"></i></div>
-       <div className="flex-Iem" style={{cursor:"pointer"}}> <i onClick={()=>{remove(task._id)}} class="fas fa-trash fa-lg"></i> </div> 
-       <div className="flex-Iem" style={{cursor:"pointer"}}>  {task.checked? (<i onClick={()=>{ check(task._id)}} class="far fa-check-square fa-lg"></i>) : (<i onClick={()=>{ check(task._id)}} class="far fa-square fa-lg"></i>)} </div>
+       <div className="flex-Item" style={{cursor:"pointer"}}> <i onClick={()=>{edit(task._id)}} class="fas fa-edit fa-lg"></i></div>
+       <div className="flex-Item" style={{cursor:"pointer"}}> <i onClick={()=>{remove(task._id)}} class="fas fa-trash fa-lg"></i> </div> 
+       <div className="flex-Item" style={{cursor:"pointer"}}>  {task.checked? (<i onClick={()=>{ check(task._id)}} class="far fa-check-square fa-lg"></i>) : (<i onClick={()=>{ check(task._id)}} class="far fa-square fa-lg"></i>)} </div>
       </CardActions>
     </Card>);}
  
