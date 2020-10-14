@@ -23,15 +23,15 @@ function App() {
   return (
     <div className="App">
       <div className = "App-container">
-        <h1>To Do List</h1>
-        <p className = "App-container">{tasks.map(t => <div style={{margin:"20px"}}>
+        <h1 style={{paddingTop:"20px"}}>To Do List</h1>
+        <p className="task-container">{tasks.map(t => <div style={{margin:"20px"}}>
           <TaskCard task = {t} check = {check} edit = {edit} remove = {remove}/></div>)}
         </p>
-      </div>
-      <button className = "btn btn-primary" onClick = {addTask}>
+        <button className = "btn btn-primary" onClick = {addTask}>
         Add New Task
-
       </button>
+      </div>
+      
     </div>
   );
 }
