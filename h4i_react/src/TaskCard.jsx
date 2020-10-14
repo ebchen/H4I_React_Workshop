@@ -39,7 +39,9 @@ const Task = ({task, remove, edit, check}) => {
        <div className="flex-Item" style={{cursor:"pointer"}}>  {task.checked? (<i onClick={()=>{ check(task._id)}} class="far fa-check-square fa-lg"></i>) : (<i onClick={()=>{ check(task._id)}} class="far fa-square fa-lg"></i>)} </div>
       </> 
     :
-    <button onClick = {save} className = "btn btn-primary"> Save </button>
+    <>
+    <button  onClick = {save} className = "btn btn-primary"> Save </button>
+    </>
    }
        </CardActions>
     </Card>);}
