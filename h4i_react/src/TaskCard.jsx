@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
 
 const Task = ({task, remove, edit, check}) => {
     const classes = useStyles();
-    const [editable, changeMode] = useState(false);
+    const [editable, changeMode] = useState(task.editable);
     const [tempTitle,changeTempTtile] = useState(task.title);
     const save =() => {
         edit(task._id, tempTitle );
