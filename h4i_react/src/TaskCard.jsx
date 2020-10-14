@@ -37,7 +37,7 @@ const Task = ({task, remove, edit, check}) => {
        <div className="flex-Item" style={{cursor:"pointer"}}> <i onClick={()=>{changeMode(!editable)}} class="fas fa-edit fa-lg"></i></div>
        <div className="flex-Item" style={{cursor:"pointer"}}> <i onClick={()=>{remove(task._id)}} class="fas fa-trash fa-lg"></i> </div> 
        <div className="flex-Item" style={{cursor:"pointer"}}>  {task.checked? (<i onClick={()=>{ check(task._id)}} class="far fa-check-square fa-lg"></i>) : (<i onClick={()=>{ check(task._id)}} class="far fa-square fa-lg"></i>)} </div>
-    </> 
+      </> 
     :
     <button onClick = {save} className = "btn btn-primary"> Save </button>
    }
