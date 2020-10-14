@@ -17,7 +17,7 @@ const Task = ({task, remove, edit, check}) => {
     const [editable, changeMode] = useState(false);
     const [tempTitle,changeTempTtile] = useState(task.title);
     const save =() => {
-        edit(task._id, task.title );
+        edit(task._id, tempTitle );
         changeMode(!editable)
     }
     const changeTitle = (e) => {
